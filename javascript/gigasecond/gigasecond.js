@@ -7,11 +7,9 @@ const OneGigasecond = 1000000000;
 
 export const gigasecond = (date) => {
 
-//let newDate = new Date();
-console.log(date);
-let testDate = new Date(Date.UTC(2011, 3, 25))
-console.log(testDate);
-//date.setSeconds(date.getSeconds() + OneGigasecond);
-//return newDate;
+    let newDateInSecond = (date.getTime() / 1000) + OneGigasecond;
+    let newDate = new Date(newDateInSecond * 1000);
+
+return newDate;
 
 };
