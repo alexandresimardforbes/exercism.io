@@ -36,4 +36,5 @@ describe('Matrix', () => {
   test('extract column where numbers have different widths', () => {
     expect(new Matrix('89 1903 3\n18 3 1\n9 4 800').columns[1]).toEqual([1903, 3, 4]);
   });
+
 });
